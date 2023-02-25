@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0 ,maximum-scale=1.0">
+    <title>Weather App</title>
+    <link rel="stylesheet" href="style.css">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+</head>
+<body>
+    
+    <div class="weather">
+        <img src="illustration.png" id="img">
+        <button class="btn" onclick="openLocation()">Enter Location</button>
+    </div>
+
+    <div class="wrapper" id="wrapper">
+        <h1>Weather App</h1>
+        <div class="inputtxt" id="inputtxt"></div>
+        <div class="input">
+            <input type="text">
+            <div class="separator"></div>
+            <button>Get Location</button>
+        </div>
+
+    <div class="details">
+        <h1><i class="bx bx-left-arrow-alt" id="i"></i>Weather App</h1>
+        <img src="_">
+        <div class="numb">_</div><span>C</span>
+        <div class="temp">_</div>
+        <i class="bx bx-location-plus" id="iconx"></i><div class="city">_</div>
+        <hr>
+        <div class="humid">
+            <div class="feel">
+            <i class="bx bx-trip" id="icon"></i><h2>_</h2><span id="unit">C</span><br>
+            <p>Feels Like</p>
+            </div>
+
+            <div class="feel">
+                <i class="bx bx-droplet" id="icon"></i><h3>-</h2><span id="unit">%</span><br>
+            <p>Humidity</p>
+            </div>
+        </div>
+
+        <div class="coord">
+        <div class="long">Longitude:
+            <div class="longg">  _</div>
+        </div>
+
+        <div class="latt">Latitude:
+        <div class="lat">  _</div>
+        </div>
+        </div>
+
+        <div class="options">
+        <i class="bx bx-home"></i>
+        <i class="bx bx-search-alt-2" onclick="openLocation2()"></i>
+        <i class="bx bx-cog"></i>
+        </div>
+
+        <div class="search">
+            <div class="cancel" onclick="closeLocation2()"><i class="bx bx-x"></i></div>
+            <h1 class="h1">Search City</h1>
+            <input type="text" class="inputx" placeholder="Enter city name">
+
+        </div>
+    </div>
+    </div>
+    
+
+    <script src="script.js"></script>
+</body>
+</html>
